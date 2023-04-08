@@ -54,16 +54,21 @@ img {
     margin: 0;
 }
 
-button {
-    font-family: inherit;
-    color: currentColor;
-    cursor: pointer;
-}
-
+/* button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+} */
 /* reset end */
-.section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.container {
+    width: 1558px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
 }
 
 .logo {
@@ -74,30 +79,52 @@ button {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
+    margin-right: 76px;
+}
+
+.navigation a {
+    padding: 24px 0;
 }
 
 .logo-dark {
-    color: var(--navy-blue)
+    color: var(--navy-blue);
+
 }
 
 .logo-light {
-    color: var(--cloud)
+    color: var(--cloud);
 }
 
-.list {
-    list-style: none;
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 76px;
 }
 
 a {
     text-decoration: none;
 }
 
+.nav-list {
+    display: flex;
+    gap: 30px;
+
+}
+
+.navigation {
+    display: flex;
+    margin-right: auto;
+
+}
+
 .nav-site {
+    display: block;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue-modal);
+    padding: 24px 0;
 
 }
 
@@ -106,21 +133,19 @@ a {
     color: var(--ocean);
 }
 
-.link {
-    text-decoration: none;
-}
-
 .link:hover,
 .link:focus {
     color: var(--ocean);
 }
 
 .address {
+
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+
 }
 
 .address:hover,
@@ -135,9 +160,15 @@ a {
     color: var(--slate);
 }
 
+.address-container {
+    display: flex;
+    gap: 40px;
+}
+
 .hero {
     background-color: var(--navy-blue);
 }
+
 
 .hero-head {
     font-size: 56px;
@@ -154,15 +185,26 @@ a {
     line-height: 1.5;
     display: flex;
     align-items: center;
+    justify-content: center;
     letter-spacing: 0.04em;
     color: var(--white);
     background-color: var(--iris);
+    padding: 16px 32px;
+    gap: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--ocean);
     cursor: pointer;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 0 30px;
+    margin: 120px 0;
 }
 
 .benefits-head {
@@ -189,10 +231,31 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--navy-blue);
+    margin-bottom: 72px;
+}
+
+.products-list {
+    display: flex;
+    justify-content: center;
+}
+
+.products-item {
+    margin-right: 24px;
+}
+
+.products-item:nth-last-child(1) {
+    margin-right: 0;
 }
 
 .our-team {
     background-color: var(--cloud);
+    padding: 120px 156px;
+}
+
+.our-team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 
 .our-team-item {
@@ -216,6 +279,7 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    margin-bottom: 8px;
 }
 
 .our-team-prof {
@@ -225,6 +289,10 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--slate)
+}
+
+.team-names {
+    padding: 32px 16px;
 }
 
 .portf-btn {
@@ -275,4 +343,9 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud);
+    padding: 100px 0;
+}
+
+.footer-section {
+    display: block;
 }
