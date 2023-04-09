@@ -316,6 +316,17 @@ a {
     border-radius: 0px 0px 4px 4px;
 }
 
+.portf-menu {
+    padding: 96px 0 120px;
+}
+
+.portf-btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
 .portf-btn {
     font-family: inherit;
     font-weight: 500;
@@ -327,6 +338,9 @@ a {
     letter-spacing: 0.04em;
     color: var(--iris);
     background-color: var(--cloud);
+    outline: 1px solid var(--cornflower);
+    padding: 12px 24px;
+    border-radius: 4px;
 }
 
 .portf-btn:hover,
@@ -334,6 +348,16 @@ a {
     background-color: var(--ocean);
     color: var(--white);
     cursor: pointer;
+}
+
+.portf-apps-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 46px 24px;
+}
+
+.portf-apps-item {
+    outline: 1px solid var(--cornflower);
 }
 
 .portf-head {
