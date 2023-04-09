@@ -15,6 +15,9 @@
     /* Fonts */
     --primary-text: Roboto, sans-serif;
     --secondary-text: Raleway, sans-serif;
+    --benefits-columnum: 4;
+    --products-num: 3;
+    --our-team-num: 4;
 
 }
 
@@ -95,6 +98,10 @@ img {
     color: var(--cloud);
 }
 
+.header {
+    border-bottom: 1px solid var(--cornflower)
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -107,7 +114,7 @@ a {
 
 .nav-list {
     display: flex;
-    gap: 30px;
+    gap: 40px;
 
 }
 
@@ -169,13 +176,19 @@ a {
     background-color: var(--navy-blue);
 }
 
+.hero .container {
+    padding: 188px 0;
+    width: 496px;
+}
 
 .hero-head {
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
     color: var(--white);
+
 }
 
 .hero-btn {
@@ -183,9 +196,10 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     letter-spacing: 0.04em;
     color: var(--white);
     background-color: var(--iris);
@@ -193,6 +207,7 @@ a {
     gap: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin: auto;
 }
 
 .hero-btn:hover,
@@ -201,10 +216,14 @@ a {
     cursor: pointer;
 }
 
+.benefits-main {
+    width: calc(100%-(24px * var(-benefits-columnum)-1)*var(--benf--benefits-columnum));
+}
+
 .benefits-list {
     display: flex;
-    gap: 0 30px;
-    margin: 120px 0;
+    gap: 0 24px;
+    padding: 120px 0;
 }
 
 .benefits-head {
@@ -213,6 +232,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -221,6 +241,11 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+}
+
+.products {
+    width: calc(100%-(24px*(var(--products-num)-1)*var(--products-num)));
+    padding-bottom: 120px;
 }
 
 .products-head {
@@ -249,13 +274,15 @@ a {
 
 .our-team {
     background-color: var(--cloud);
-    padding: 120px 156px;
+    padding: 120px 0;
 }
+
 
 .our-team-list {
     display: flex;
     gap: 24px;
     justify-content: center;
+    width: calc (100%-(24*(var(--our-team-num)-1)) / var(--our-team-num));
 }
 
 .our-team-item {
@@ -270,6 +297,7 @@ a {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--navy-blue-modal);
+    margin-bottom: 72px;
 }
 
 .our-team-mem {
@@ -293,6 +321,7 @@ a {
 
 .team-names {
     padding: 32px 16px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .portf-btn {
@@ -337,6 +366,12 @@ a {
     background-color: var(--navy-blue);
 }
 
+.footer-section {
+    padding: 100px 0;
+
+}
+
+
 .footer-text {
     font-weight: 400;
     font-size: 16px;
@@ -346,6 +381,8 @@ a {
     padding: 100px 0;
 }
 
-.footer-section {
-    display: block;
+.footer-logo {
+    display: inline-block;
+    width: 264px;
+    margin-bottom: 8px;
 }
