@@ -215,7 +215,7 @@ a {
 }
 
 .benefits-main {
-    width: calc((100%-(24px*3))/4);
+    width: calc((100% - 72px) / 4);
     padding: 120px 0;
 }
 
@@ -281,7 +281,7 @@ a {
     display: flex;
     gap: 24px;
     justify-content: center;
-    width: calc (100%-(24*3) / 4);
+    width: calc((100%-72px) / 4)
 }
 
 .our-team-item {
@@ -361,11 +361,18 @@ a {
 .portf-apps-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 46px 24px;
+    gap: 48px 24px;
 }
 
 .portf-apps-item {
     outline: 1px solid var(--cornflower);
+}
+
+.app-name {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+
 }
 
 .portf-head {
@@ -375,6 +382,7 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    margin-bottom: 8px;
 }
 
 .portf-text {
