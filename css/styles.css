@@ -215,6 +215,7 @@ a {
 }
 
 .benefits-main {
+    width: calc((100% - (24px*3))/4);
     padding: 120px 0;
 }
 
@@ -224,6 +225,8 @@ a {
 
 }
 
+
+
 .benefits-head {
     font-weight: 500;
     font-size: 20px;
@@ -231,7 +234,7 @@ a {
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     margin-bottom: 8px;
-    width: calc((100% - (24px*3))/4);
+
 }
 
 .benefits-text {
