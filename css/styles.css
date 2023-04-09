@@ -64,7 +64,7 @@ img {
 } */
 /* reset end */
 .container {
-    width: 1558px;
+    width: 1158px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -85,8 +85,10 @@ img {
     margin-right: 76px;
 }
 
+
 .navigation a {
     padding: 24px 0;
+    align-items: center;
 }
 
 .logo-dark {
@@ -102,12 +104,6 @@ img {
     border-bottom: 1px solid var(--cornflower)
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    height: 76px;
-}
-
 a {
     text-decoration: none;
 }
@@ -115,7 +111,7 @@ a {
 .nav-list {
     display: flex;
     gap: 40px;
-
+    align-items: center
 }
 
 .navigation {
@@ -146,13 +142,11 @@ a {
 }
 
 .address {
-
     font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-
 }
 
 .address:hover,
@@ -174,11 +168,7 @@ a {
 
 .hero {
     background-color: var(--navy-blue);
-}
-
-.hero .container {
     padding: 188px 0;
-    width: 496px;
 }
 
 .hero-head {
@@ -188,7 +178,7 @@ a {
     letter-spacing: 0.02em;
     margin-bottom: 48px;
     color: var(--white);
-
+    max-width: 496px
 }
 
 .hero-btn {
@@ -208,6 +198,7 @@ a {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin: auto;
+    cursor: pointer
 }
 
 .hero-btn:hover,
@@ -217,13 +208,14 @@ a {
 }
 
 .benefits-main {
-    width: calc(100%-(24px * var(-benefits-columnum)-1)*var(--benf--benefits-columnum));
+    width: calc(100%-(24px*3)*4);
+    padding: 120px 0;
 }
 
 .benefits-list {
     display: flex;
-    gap: 0 24px;
-    padding: 120px 0;
+    gap: 24px;
+
 }
 
 .benefits-head {
@@ -244,7 +236,7 @@ a {
 }
 
 .products {
-    width: calc(100%-(24px*(var(--products-num)-1)*var(--products-num)));
+    width: calc(100%-(24px*2)*3);
     padding-bottom: 120px;
 }
 
@@ -282,7 +274,7 @@ a {
     display: flex;
     gap: 24px;
     justify-content: center;
-    width: calc (100%-(24*(var(--our-team-num)-1)) / var(--our-team-num));
+    width: calc (100%-(24*3) / 4);
 }
 
 .our-team-item {
@@ -364,11 +356,7 @@ a {
 
 .footer {
     background-color: var(--navy-blue);
-}
-
-.footer-section {
     padding: 100px 0;
-
 }
 
 
@@ -384,5 +372,5 @@ a {
 .footer-logo {
     display: inline-block;
     width: 264px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
