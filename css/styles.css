@@ -229,7 +229,8 @@ a {
 }
 
 .benefits-item {
-    width: calc(100%-(24px*(var(--benefits-columnum)-1)*var(--benefits-columnum)));
+    width: calc(100% - (24px*(var(--benefits-columnum) - 1)*var(--benefits-columnum)));
+    /* width: calc((100% - 72px) / 4); */
 }
 
 
