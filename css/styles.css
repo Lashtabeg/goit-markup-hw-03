@@ -379,7 +379,7 @@ a {
 }
 
 .portf-apps-item {
-    border: 1px solid var(--cornflower);
+
     width: calc((100%-(24px*var(--portf-list-num)-1))/var(--portf-list-num));
     box-sizing: content-box;
 
